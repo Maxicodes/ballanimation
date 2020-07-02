@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>devprojects</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="grid.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">    
+      <!--<script
+       src="https://kit.fontawesome.com/15b53e32e5.js">
+   </script>-->
+
+        <style>
+            :root {
+  --green: rgb(223, 176, 183);
+  --blue: blue;
+  --border: blue solid 1px ;
+  --ad: 7s;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 80vh;
+  display: flex;
+  justify-content: left; /*try making it rotate left*/
+  align-items: center;
+  background: hsl(253, 100%, 3%);
+  margin-left: -40vw;
+}
+
+#wrapper {
+  width: 400px;
+  height: 400px;
+  animation-name: move;
+  animation-duration: var(--ad);
+  animation-timing-function: linear; /* direction*/
+  animation-iteration-count: infinite; /*the number of rounds*/
+}
+
+@keyframes move {/* >wrapper>animation name*/
+  0% { transform: translateX(125vw); }
+  100% { transform: translateX(0px); }
+  /*this part of the code makes the ball move*/
+ }
+
+#circle {
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d; /*??????*/
+  position: relative;
+  top: 100px;
+  margin: auto;
+  backface-visibility: visible;/*??????*/
+  animation-name: rotate;
+  animation-duration: var(--ad);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes rotate {
+  0% { transform: rotateZ(359deg); }
+  100% { transform: rotateZ( 0deg); }
+ }
+     /*this part of the code makes the ball move*/
+
+
+#circle div {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  position: absolute;
+  float: left;
+  opacity: 0.25;
+  backface-visibility: visible;/*??????*/
+  background-color: var(--green);
+  border:  var(--border);
+}
+
+
+
+ #circle1 {
+  transform: rotateY(0deg);
+}
+
+#circle2 {
+  transform: rotateY(15deg);
+}
+#circle3 {
+  transform: rotateY(30deg);
+ }
+#circle4 {
+  transform: rotateY(45deg);
+}
+#circle5 {
+  transform: rotateY(60deg);
+}
+#circle6 {
+  transform: rotateY(75deg);
+}
+
+#circle7 {
+  transform: rotateY(90deg);
+}
+#circle8 {
+  transform: rotateY(105deg);
+}
+#circle9 {
+  transform: rotateY(120deg);
+}
+#circle10 {
+  transform: rotateY(135deg);
+}
+#circle11 {
+  transform: rotateY(150deg);
+}
+#circle12 {
+  transform: rotateY(165deg);
+}
+
+/* rotateX*/
+#circle13 {
+  background-color: var(--blue)!important;
+  transform: rotateX(0deg);
+}
+#circle14 {
+  background-color: var(--blue)!important;
+  transform: rotateX(15deg);
+}
+#circle15 {
+  background-color: var(--blue)!important;
+  transform: rotateX(30deg);
+}
+#circle16 {
+  background-color: var(--blue)!important;
+  transform: rotateX(45deg);
+}
+#circle17 {
+  background-color: var(--blue)!important;
+  transform: rotateX(60deg);
+}
+
+#circle18 {
+  background-color: var(--blue)!important;
+  transform: rotateX(75deg);
+}
+#circle19 {
+  background-color: var(--blue)!important;
+  transform: rotateX(90deg);
+}
+#circle20 {
+  background-color: var(--blue)!important;
+  transform: rotateX(105deg);
+}
+#circle21 {
+  background-color: var(--blue)!important;
+  transform: rotateX(120deg);
+}
+#circle22 {
+  background-color: var(--blue)!important;
+  transform: rotateX(135deg);
+}
+#circle23 {
+  background-color: var(--blue)!important;
+  transform: rotateX(150deg);
+}
+#circle24 {
+  background-color: var(--blue)!important;
+  transform: rotateX(165deg);
+}
+
+/* rotateZ */
+#circle25 {
+  background-color: var(--red);
+  transform: rotateZ(90deg) rotateX(-45deg) rotateY(-45deg);
+  border:  var(--border);
+  backface-visibility: visible;
+}
+
+
+ </style>
+
+</head>
+<body>
+ <div id="wrapper">
+    <div id="circle">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+        <div id="circle5"></div>
+        <div id="circle6"></div>
+        <div id="circle7"></div>
+        <div id="circle8"></div>
+        <div id="circle9"></div>
+        <div id="circle10"></div>
+        <div id="circle11"></div>
+        <div id="circle12"></div>
+        <div id="circle13"></div>
+        <div id="circle14"></div>
+        <div id="circle15"></div>
+        <div id="circle16"></div>
+        <div id="circle17"></div>
+        <div id="circle18"></div>
+        <div id="circle19"></div>
+        <div id="circle20"></div>
+        <div id="circle21"></div>
+        <div id="circle22"></div>
+        <div id="circle23"></div>
+        <div id="circle24"></div>
+        <div id="circle25"></div>
+     </div>
+</div>
+
+ 
+</body>
+</html>
